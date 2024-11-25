@@ -1,10 +1,11 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import type React from "react";
 import Animated, {
   interpolateColor,
   useAnimatedStyle,
   type SharedValue
 } from "react-native-reanimated";
+import { _dotContainer, _dotSize } from "./constants";
 
 type DotProps = {
   index: number;
@@ -21,8 +22,24 @@ export const Dot: React.FC<DotProps> = ({ index, animation }) => {
     };
   });
   return (
-    <View className="justify-center items-center w-[24px] aspect-square">
-      <Animated.View className="w-2 h-2 rounded-full" style={stylez} />
+    <View
+      style={{
+        width: _dotContainer,
+        aspectRatio: 1,
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
+      <Animated.View
+        style={[
+          stylez,
+          {
+            width: _dotSize,
+            height: _dotSize,
+            borderRadius: _dotSize
+          }
+        ]}
+      />
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import type React from "react";
 import { Dot } from "./Dot";
 import { useDerivedValue, withSpring } from "react-native-reanimated";
@@ -19,8 +19,17 @@ export const Pagination: React.FC<PaginationProps> = ({
     });
   });
   return (
-    <View className="justify-center items-center">
-      <View className="flex-row">
+    <View
+      style={{
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
+      <View
+        style={{
+          flexDirection: "row"
+        }}
+      >
         <PaginationIndicator animation={animation} />
         {[...Array(total).keys()].map((index) => (
           <Dot key={`dot-${index}`} index={index} animation={animation} />

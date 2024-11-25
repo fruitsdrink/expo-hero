@@ -8,6 +8,7 @@ import Animated, {
   LinearTransition
 } from "react-native-reanimated";
 import { Pagination } from "./Pagination";
+import { _spacing } from "./constants";
 
 type OnboardingProps = {
   total: number;
@@ -21,19 +22,30 @@ export const Onboarding: React.FC<OnboardingProps> = ({
   onIndexChange
 }) => {
   return (
-    <View className="gap-4 p-2">
+    <View style={{ padding: _spacing, gap: _spacing * 2 }}>
       <Pagination selectedIndex={selectedIndex} total={total} />
-      <View className="flex-row">
+
+      <View
+        style={{
+          flexDirection: "row",
+          gap: _spacing
+        }}
+      >
         {selectedIndex > 0 && (
           <Button
-            className={"bg-[#ddd]"}
+            style={{
+              backgroundColor: "#ddd"
+            }}
             onPress={() => onIndexChange(selectedIndex - 1)}
           >
             <Text>上一步</Text>
           </Button>
         )}
         <Button
-          className={"bg-[#036bfb] flex-1"}
+          style={{
+            backgroundColor: "#036bfb",
+            flex: 1
+          }}
           onPress={() => {
             if (selectedIndex === total - 1) return;
             onIndexChange(selectedIndex + 1);
@@ -41,7 +53,9 @@ export const Onboarding: React.FC<OnboardingProps> = ({
         >
           {selectedIndex === total - 1 ? (
             <Animated.Text
-              className={"text-white"}
+              style={{
+                color: "#fff"
+              }}
               key={"finish"}
               entering={FadeInDown.springify().damping(80).stiffness(200)}
               exiting={FadeOutUp.springify().damping(80).stiffness(200)}
@@ -51,7 +65,9 @@ export const Onboarding: React.FC<OnboardingProps> = ({
             </Animated.Text>
           ) : (
             <Animated.Text
-              className={"text-white"}
+              style={{
+                color: "#fff"
+              }}
               key={"next"}
               entering={FadeInDown.springify().damping(80).stiffness(200)}
               exiting={FadeOutUp.springify().damping(80).stiffness(200)}
