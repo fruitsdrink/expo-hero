@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { Link, Stack } from "expo-router";
+import { Pressable, Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -9,9 +10,12 @@ export default function Index() {
         alignItems: "center"
       }}
     >
-      <Text className="text-red-500">
-        Edit app/index.tsx to edit this screen.
-      </Text>
+      <Stack.Screen options={{ title: "首页" }} />
+      <Link href={"/animation/onboarding-pagination-indicator"} asChild>
+        <Pressable>
+          <Text>分页指示器引导页</Text>
+        </Pressable>
+      </Link>
     </View>
   );
 }
