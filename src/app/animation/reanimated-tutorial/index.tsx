@@ -9,6 +9,24 @@ const tutorials = [
     title: "动画4步",
     url: "/animation/reanimated-tutorial/animated-4-steps" as Href,
     youtube: "https://youtu.be/NRHoyKgb42E?si=M1r1Brzuqd9KAvhz" as Href
+  },
+  {
+    id: "2",
+    title: "动画暂停恢复",
+    url: "/animation/reanimated-tutorial/stop-pause-resume" as Href,
+    youtube: "https://youtu.be/Oh0zo75sUK8?si=C8vC2Yv7f8L9YYz3" as Href
+  },
+  {
+    id: "3",
+    title: "动画反应",
+    url: "/animation/reanimated-tutorial/animated-reaction" as Href,
+    youtube: "https://youtu.be/Wr0mY6S8ssA?si=Epx3EYEXLt3PKoWy" as Href
+  },
+  {
+    id: "4",
+    title: "手风琴列表动画",
+    url: "/animation/reanimated-tutorial/animated-accordion" as Href,
+    youtube: "https://youtu.be/cllr2NksjEE?si=oa4pMhSExLQ8SMD6" as Href
   }
 ];
 
@@ -16,7 +34,7 @@ export default function ReanimatedTutorialHomeScreen() {
   return (
     <View className="justify-center p-4">
       <Stack.Screen options={{ title: "Reanimated 练习" }} />
-      <View>
+      <View className="gap-4">
         {tutorials.map((tutorial) => (
           <View
             key={tutorial.id}
