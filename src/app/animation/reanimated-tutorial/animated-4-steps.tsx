@@ -39,6 +39,24 @@ export default function Animation4StepsScreen() {
       >
         淡入淡出效果
       </Text>
+      <View
+        style={{
+          marginTop: 16,
+          gap: 8
+        }}
+      >
+        <Text
+          style={{
+            fontWeight: "bold"
+          }}
+        >
+          动画4步走
+        </Text>
+        <Text>1. 创建动画变量</Text>
+        <Text>2. 创建动画样式</Text>
+        <Text>3. 应用动画样式</Text>
+        <Text>4. 改变动画变量</Text>
+      </View>
     </View>
   );
 }
