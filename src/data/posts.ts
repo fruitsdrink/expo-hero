@@ -32,5 +32,14 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/reanimated.png"),
     youtube: "https://youtu.be/bP72HF-G4aQ?si=OoWSTSOeBRjiCdmm",
     tags: ["animation", "reanimated"]
+  },
+  {
+    id: "3",
+    title: "Reanimated轮播图",
+    href: "/animation/reanimated-carousel",
+    date: "2024-11-16",
+    image: require("@assets/images/hero/reanimated.png"),
+    youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
+    tags: ["animation", "reanimated", "轮播图"]
   }
 ];
