@@ -14,7 +14,7 @@ type LabListItemProps = {
 };
 
 export const LabListItem: React.FC<LabListItemProps> = ({
-  post: { title, desc, image, href, date, github, youtube, tags }
+  post: { title, desc, image, href, date, github, youtube, tags, imageSizeType }
 }) => {
   return (
     <View
@@ -42,7 +42,10 @@ export const LabListItem: React.FC<LabListItemProps> = ({
                 transition={1000}
                 style={{
                   width: "100%",
-                  aspectRatio: 4 / 2
+                  aspectRatio:
+                    !imageSizeType || imageSizeType === "horizontal"
+                      ? 4 / 2
+                      : 2 / 3
                   // height: 300
                 }}
               />
@@ -59,11 +62,11 @@ export const LabListItem: React.FC<LabListItemProps> = ({
           </View>
           {desc && <Text className="text-base text-gray-500">{desc}</Text>}
           {tags && (
-            <View className="flex-row gap-1 my-2">
+            <View className="flex-row flex-wrap gap-1 my-2 w-full">
               {tags.map((tag) => (
                 <View
                   key={tag}
-                  className="flex-wrap px-2 py-1 text-sm rounded-full bg-slate-800"
+                  className="px-2 py-1 text-sm rounded-full  bg-slate-800"
                 >
                   <Text className="text-white">{tag}</Text>
                 </View>

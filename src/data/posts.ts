@@ -7,6 +7,7 @@ export type Post = {
   href: Href;
   date: string;
   image: NodeRequire;
+  imageSizeType?: "horizontal" | "vertical";
   github?: Href;
   youtube?: Href;
   tags?: string[];
@@ -21,7 +22,7 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/onboarding-pagination-indicator.jpg"),
     github: "https://github.com/fruitsdrink/rn-onboarding-component-",
     youtube: "https://youtu.be/m8ATJwrAif0?si=wVO_qEYYEVCZ_xEQ",
-    tags: ["animation", "reanimated", "onboarding"]
+    tags: ["animation", "reanimated", "onboarding", "轮播图"]
   },
   {
     id: "2",
@@ -38,7 +39,8 @@ export const posts: Post[] = [
     title: "Reanimated轮播图",
     href: "/animation/reanimated-carousel",
     date: "2024-11-16",
-    image: require("@assets/images/hero/reanimated.png"),
+    image: require("@assets/images/hero/reanimated-carousel.jpg"),
+    imageSizeType: "vertical",
     youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
     tags: ["animation", "reanimated", "轮播图"]
   }
