@@ -4,6 +4,10 @@ import type React from "react";
 import { posts } from "@/data/posts";
 import { LabListItem } from "@/components/LabListItem";
 
+const sortedPost = posts.sort((a, b) => {
+  // 按id倒序排序
+  return Number.parseInt(b.id) - Number.parseInt(a.id);
+});
 export default function Index() {
   return (
     <SafeAreaView className="flex-1">

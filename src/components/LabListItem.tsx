@@ -28,11 +28,10 @@ export const LabListItem: React.FC<LabListItemProps> = ({
           {image && (
             <View
               style={{
-                borderWidth: 1,
+                borderWidth: 0,
                 borderColor: "rgba(0,0,0,0.1)",
                 borderRadius: 8,
-                marginBottom: 16,
-                padding: 8
+                marginBottom: 16
               }}
             >
               <Image
@@ -41,6 +40,7 @@ export const LabListItem: React.FC<LabListItemProps> = ({
                 placeholder={{ blurhash }}
                 transition={1000}
                 style={{
+                  borderRadius: 8,
                   width: "100%",
                   aspectRatio:
                     !imageSizeType || imageSizeType === "horizontal"
@@ -66,7 +66,7 @@ export const LabListItem: React.FC<LabListItemProps> = ({
               {tags.map((tag) => (
                 <View
                   key={tag}
-                  className="px-2 py-1 text-sm rounded-full  bg-slate-800"
+                  className="px-2 py-1 text-sm rounded-full bg-slate-800"
                 >
                   <Text className="text-white">{tag}</Text>
                 </View>

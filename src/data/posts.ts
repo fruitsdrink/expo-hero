@@ -1,4 +1,5 @@
 import type { Href } from "expo-router";
+import type { ImageSourcePropType } from "react-native";
 
 export type Post = {
   id: string;
@@ -6,7 +7,7 @@ export type Post = {
   desc?: string;
   href: Href;
   date: string;
-  image: NodeRequire;
+  image: ImageSourcePropType;
   imageSizeType?: "horizontal" | "vertical";
   github?: Href;
   youtube?: Href;
@@ -43,5 +44,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
     tags: ["animation", "reanimated", "轮播图"]
+  },
+  {
+    id: "4",
+    title: "循环轮播图",
+    href: "/animation/reanimated-slider",
+    date: "2024-11-16",
+    image: require("@assets/images/hero/reanimated-slider.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/wIh60UQzUKY?si=nVV3hOb5UgNAooyH",
+    tags: ["FlatList", "animation", "reanimated", "轮播图"]
   }
 ];
