@@ -23,7 +23,7 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/onboarding-pagination-indicator.jpg"),
     github: "https://github.com/fruitsdrink/rn-onboarding-component-",
     youtube: "https://youtu.be/m8ATJwrAif0?si=wVO_qEYYEVCZ_xEQ",
-    tags: ["animation", "reanimated", "onboarding", "轮播图"]
+    tags: ["动画", "reanimated", "onboarding", "轮播图"]
   },
   {
     id: "2",
@@ -33,7 +33,7 @@ export const posts: Post[] = [
     date: "2024-11-16",
     image: require("@assets/images/hero/reanimated.png"),
     youtube: "https://youtu.be/bP72HF-G4aQ?si=OoWSTSOeBRjiCdmm",
-    tags: ["animation", "reanimated"]
+    tags: ["动画", "reanimated"]
   },
   {
     id: "3",
@@ -43,7 +43,7 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/reanimated-carousel.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
-    tags: ["animation", "reanimated", "轮播图"]
+    tags: ["动画", "reanimated", "轮播图"]
   },
   {
     id: "4",
@@ -53,6 +53,6 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/reanimated-slider.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/wIh60UQzUKY?si=nVV3hOb5UgNAooyH",
-    tags: ["FlatList", "animation", "reanimated", "轮播图"]
+    tags: ["FlatList", "动画", "reanimated", "轮播图"]
   }
 ];

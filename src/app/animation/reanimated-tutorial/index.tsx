@@ -27,6 +27,12 @@ const tutorials = [
     title: "手风琴列表动画",
     url: "/animation/reanimated-tutorial/animated-accordion" as Href,
     youtube: "https://youtu.be/cllr2NksjEE?si=oa4pMhSExLQ8SMD6" as Href
+  },
+  {
+    id: "5",
+    title: "堆栈卡片动画",
+    url: "/animation/reanimated-tutorial/animated-stack-carousel" as Href,
+    youtube: "https://youtu.be/jZFqIvgmBrw?si=cNnqTzrceXiaX6ck" as Href
   }
 ];
 
