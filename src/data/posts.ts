@@ -63,6 +63,6 @@ export const posts: Post[] = [
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-01.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/7ZkwC8NKPzM?si=bmytT6Eu4L-u11Gn",
-    tags: ["引导屏", "onboarding"]
+    tags: ["引导屏", "onboarding", "FlatList"]
   }
 ];
