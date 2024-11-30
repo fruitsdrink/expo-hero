@@ -38,6 +38,16 @@
         {
           "assets": ["./assets/images/hero/onboarding-pagination-indicator.jpg"]
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Roboto-Black.ttf",
+            "./assets/fonts/Roboto-Bold.ttf",
+            "./assets/fonts/Roboto-Regular.ttf"
+          ]
+        }
       ]
     ],
     "experiments": {
