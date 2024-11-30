@@ -58,9 +58,9 @@ export const posts: Post[] = [
   {
     id: "5",
     title: "引导屏01",
-    href: "/onboarding-screen/onboarding-screen-01",
+    href: "/onboarding-screen/onboarding-screen-01/onboarding",
     date: "2024-11-16",
-    image: require("@assets/images/hero/reanimated-slider.jpg"),
+    image: require("@assets/images/hero/onboarding-screen/onboarding-screen-01.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/7ZkwC8NKPzM?si=bmytT6Eu4L-u11Gn",
     tags: ["引导屏", "onboarding"]
