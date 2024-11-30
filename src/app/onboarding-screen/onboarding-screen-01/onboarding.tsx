@@ -15,21 +15,21 @@ import { Link, Stack, useRouter } from "expo-router";
 const slides = [
   {
     id: "1",
-    image: require("@assets/images/onboarding-screen/image01.png"),
+    image: require("@assets/images/onboarding-screen/onboarding-screen-01/image01.png"),
     title: "Lorem, ipsum dolor",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
   },
   {
     id: "2",
-    image: require("@assets/images/onboarding-screen/image02.png"),
+    image: require("@assets/images/onboarding-screen/onboarding-screen-01/image02.png"),
     title: "Lorem, ipsum dolor",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
   },
   {
     id: "3",
-    image: require("@assets/images/onboarding-screen/image03.png"),
+    image: require("@assets/images/onboarding-screen/onboarding-screen-01/image03.png"),
     title: "Lorem, ipsum dolor",
     subtitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."

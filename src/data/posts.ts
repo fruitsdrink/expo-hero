@@ -19,7 +19,7 @@ export const posts: Post[] = [
     id: "1",
     title: "分页指示器引导页",
     href: "/animation/onboarding-pagination-indicator",
-    date: "2024-11-15",
+    date: "2024-11-25",
     image: require("@assets/images/hero/onboarding-pagination-indicator.jpg"),
     github: "https://github.com/fruitsdrink/rn-onboarding-component-",
     youtube: "https://youtu.be/m8ATJwrAif0?si=wVO_qEYYEVCZ_xEQ",
@@ -30,7 +30,7 @@ export const posts: Post[] = [
     title: "Reanimated练习",
     desc: "Reanimated 系列基础练习",
     href: "/animation/reanimated-tutorial",
-    date: "2024-11-16",
+    date: "2024-11-26",
     image: require("@assets/images/hero/reanimated.png"),
     youtube: "https://youtu.be/bP72HF-G4aQ?si=OoWSTSOeBRjiCdmm",
     tags: ["动画", "reanimated"]
@@ -39,7 +39,7 @@ export const posts: Post[] = [
     id: "3",
     title: "Reanimated轮播图",
     href: "/animation/reanimated-carousel",
-    date: "2024-11-16",
+    date: "2024-11-27",
     image: require("@assets/images/hero/reanimated-carousel.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
@@ -49,7 +49,7 @@ export const posts: Post[] = [
     id: "4",
     title: "循环轮播图",
     href: "/animation/reanimated-slider",
-    date: "2024-11-16",
+    date: "2024-11-29",
     image: require("@assets/images/hero/reanimated-slider.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/wIh60UQzUKY?si=nVV3hOb5UgNAooyH",
@@ -59,10 +59,20 @@ export const posts: Post[] = [
     id: "5",
     title: "引导屏01",
     href: "/onboarding-screen/onboarding-screen-01/onboarding",
-    date: "2024-11-16",
+    date: "2024-11-30",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-01.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/7ZkwC8NKPzM?si=bmytT6Eu4L-u11Gn",
+    tags: ["引导屏", "onboarding", "FlatList"]
+  },
+  {
+    id: "6",
+    title: "引导屏02",
+    href: "/onboarding-screen/onboarding-screen-02",
+    date: "2024-11-30",
+    image: require("@assets/images/hero/onboarding-screen/onboarding-screen-02.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/0eWe01XPM40?si=jx8e40SXDjRHtW_W",
     tags: ["引导屏", "onboarding", "FlatList"]
   }
 ];
