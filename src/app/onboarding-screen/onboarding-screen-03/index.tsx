@@ -103,14 +103,18 @@ export default function OnboardingScreen03() {
   const scrollX = new Animated.Value(0);
 
   React.useEffect(() => {
-    scrollX.addListener(({ value }) => {
+    const fn = ({ value }: { value: number }) => {
+      console.log(value);
       if (Math.floor(value / appTheme.SIZES.width) === slides.length - 1) {
         setCompleted(true);
+      } else {
+        setCompleted(false);
       }
-    });
+    };
+    const id = scrollX.addListener(fn);
 
-    return () => scrollX.removeAllListeners();
-  }, [scrollX.addListener, scrollX.removeAllListeners]);
+    return () => scrollX.removeListener(id);
+  }, [scrollX.addListener, scrollX.removeListener]);
 
   return (
     <>
