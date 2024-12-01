@@ -89,7 +89,7 @@ export const posts: Post[] = [
     id: "8",
     title: "引导屏04",
     href: "/onboarding-screen/onboarding-screen-04",
-    date: "2024-11-30",
+    date: "2024-12-01",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-04.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/OT-73hpwxXQ?si=flAD5_Ga51vwL2Zj",
