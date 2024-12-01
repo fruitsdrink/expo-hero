@@ -120,9 +120,9 @@ export const posts: Post[] = [
     title: "视差轮播图",
     href: "/animation/reanimated-wallpaper-carousel",
     date: "2024-12-01",
-    image: require("@assets/images/hero/onboarding-screen/onboarding-screen-06.jpg"),
+    image: require("@assets/images/hero/animation/reanimated-wallpaper-carousel.jpg"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/qaGRabISXwI?si=I7wo8WzX40Ni0GlL",
-    tags: ["视差", "轮播图"]
+    tags: ["视差", "轮播图", "TanStack Query", "FlatList", "reanimated"]
   }
 ];
