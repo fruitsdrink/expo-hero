@@ -114,5 +114,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/XHFND34Tx9g?si=_sx3QiPlOjQaCgo4",
     tags: ["引导屏", "onboarding", "FlatList"]
+  },
+  {
+    id: "11",
+    title: "视差轮播图",
+    href: "/animation/reanimated-wallpaper-carousel",
+    date: "2024-12-01",
+    image: require("@assets/images/hero/onboarding-screen/onboarding-screen-06.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/qaGRabISXwI?si=I7wo8WzX40Ni0GlL",
+    tags: ["视差", "轮播图"]
   }
 ];
