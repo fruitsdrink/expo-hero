@@ -94,5 +94,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/OT-73hpwxXQ?si=flAD5_Ga51vwL2Zj",
     tags: ["引导屏", "onboarding", "reanimated", "动画", "ScrollView"]
+  },
+  {
+    id: "9",
+    title: "引导屏05",
+    href: "/onboarding-screen/onboarding-screen-05",
+    date: "2024-12-01",
+    image: require("@assets/images/hero/onboarding-screen/onboarding-screen-05.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/YE7c6ch2msY?si=tnsshiUQMrDrIQmL",
+    tags: ["引导屏", "onboarding", "原生动画", "动画", "FlatList"]
   }
 ];
