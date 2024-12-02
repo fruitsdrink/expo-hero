@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
 const PexelsWallPaper = () => {
   const scrollX = useSharedValue(0);
 
-  const { data, isLoading, isFetching } = useQuery<SearchPayload>({
+  const { data, isFetching } = useQuery<SearchPayload>({
     queryKey: ["wallpapers"],
     queryFn: async () => {
       const res = await fetch(uri, {

@@ -22,7 +22,7 @@ export const posts: Post[] = [
     date: "2024-11-25",
     image: require("@assets/images/hero/onboarding-pagination-indicator.jpg"),
     github: "https://github.com/fruitsdrink/rn-onboarding-component-",
-    youtube: "https://youtu.be/m8ATJwrAif0?si=wVO_qEYYEVCZ_xEQ",
+    youtube: "https://youtu.be/m8ATJwrAif0",
     tags: ["动画", "reanimated", "onboarding", "轮播图"]
   },
   {
@@ -32,7 +32,7 @@ export const posts: Post[] = [
     href: "/animation/reanimated-tutorial",
     date: "2024-11-26",
     image: require("@assets/images/hero/reanimated.png"),
-    youtube: "https://youtu.be/bP72HF-G4aQ?si=OoWSTSOeBRjiCdmm",
+    youtube: "https://youtu.be/bP72HF-G4aQ",
     tags: ["动画", "reanimated"]
   },
   {
@@ -42,7 +42,7 @@ export const posts: Post[] = [
     date: "2024-11-27",
     image: require("@assets/images/hero/reanimated-carousel.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/LflZJ4sY5Pw?si=7DQDSuB7DpQmlOPu",
+    youtube: "https://youtu.be/LflZJ4sY5Pw",
     tags: ["动画", "reanimated", "轮播图"]
   },
   {
@@ -52,7 +52,7 @@ export const posts: Post[] = [
     date: "2024-11-29",
     image: require("@assets/images/hero/reanimated-slider.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/wIh60UQzUKY?si=nVV3hOb5UgNAooyH",
+    youtube: "https://youtu.be/wIh60UQzUKY",
     tags: ["FlatList", "动画", "reanimated", "轮播图"]
   },
   {
@@ -62,7 +62,7 @@ export const posts: Post[] = [
     date: "2024-11-30",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-01.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/7ZkwC8NKPzM?si=bmytT6Eu4L-u11Gn",
+    youtube: "https://youtu.be/7ZkwC8NKPzM",
     tags: ["引导屏", "onboarding", "FlatList"]
   },
   {
@@ -72,7 +72,7 @@ export const posts: Post[] = [
     date: "2024-11-30",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-02.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/0eWe01XPM40?si=jx8e40SXDjRHtW_W",
+    youtube: "https://youtu.be/0eWe01XPM40",
     tags: ["引导屏", "onboarding", "FlatList"]
   },
   {
@@ -82,7 +82,7 @@ export const posts: Post[] = [
     date: "2024-11-30",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-03.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/1XP28xVToho?si=w_x2e7zj8BXxKDxp",
+    youtube: "https://youtu.be/1XP28xVToho",
     tags: ["引导屏", "onboarding", "原生动画", "ScrollView", "动画"]
   },
   {
@@ -92,7 +92,7 @@ export const posts: Post[] = [
     date: "2024-12-01",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-04.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/OT-73hpwxXQ?si=flAD5_Ga51vwL2Zj",
+    youtube: "https://youtu.be/OT-73hpwxXQ",
     tags: ["引导屏", "onboarding", "reanimated", "动画", "ScrollView"]
   },
   {
@@ -102,7 +102,7 @@ export const posts: Post[] = [
     date: "2024-12-01",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-05.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/YE7c6ch2msY?si=tnsshiUQMrDrIQmL",
+    youtube: "https://youtu.be/YE7c6ch2msY",
     tags: ["引导屏", "onboarding", "原生动画", "动画", "FlatList"]
   },
   {
@@ -112,7 +112,7 @@ export const posts: Post[] = [
     date: "2024-12-01",
     image: require("@assets/images/hero/onboarding-screen/onboarding-screen-06.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/XHFND34Tx9g?si=_sx3QiPlOjQaCgo4",
+    youtube: "https://youtu.be/XHFND34Tx9g",
     tags: ["引导屏", "onboarding", "FlatList"]
   },
   {
@@ -122,7 +122,7 @@ export const posts: Post[] = [
     date: "2024-12-01",
     image: require("@assets/images/hero/animation/reanimated-wallpaper-carousel.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/qaGRabISXwI?si=I7wo8WzX40Ni0GlL",
+    youtube: "https://youtu.be/qaGRabISXwI",
     tags: ["视差", "轮播图", "TanStack Query", "FlatList", "reanimated"]
   },
   {
@@ -132,7 +132,17 @@ export const posts: Post[] = [
     date: "2024-12-02",
     image: require("@assets/images/hero/animation/animated-flatlist.jpg"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/F8x-dyIsrJ8?si=xfSWsiAoavblSDUm",
+    youtube: "https://youtu.be/F8x-dyIsrJ8",
     tags: ["FlatList", "原生动画", "动画"]
+  },
+  {
+    id: "13",
+    title: "视差轮播图2",
+    href: "/animation/reanimated-wallpaper-carousel2",
+    date: "2024-12-02",
+    image: require("@assets/images/hero/animation/reanimated-wallpaper-carousel2.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://www.youtube.com/live/8Saxitk5IWg",
+    tags: ["视差", "轮播图", "TanStack Query", "FlatList", "reanimated"]
   }
 ];
