@@ -124,5 +124,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/qaGRabISXwI?si=I7wo8WzX40Ni0GlL",
     tags: ["视差", "轮播图", "TanStack Query", "FlatList", "reanimated"]
+  },
+  {
+    id: "12",
+    title: "FlatList动画",
+    href: "/animation/animated-flatlist",
+    date: "2024-12-02",
+    image: require("@assets/images/hero/animation/animated-flatlist.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/F8x-dyIsrJ8?si=xfSWsiAoavblSDUm",
+    tags: ["FlatList", "原生动画", "动画"]
   }
 ];
