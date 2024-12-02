@@ -11,7 +11,7 @@ const sortedPost = posts.sort((a, b) => {
 export default function Index() {
   return (
     <SafeAreaView className="flex-1">
-      <Stack.Screen options={{ title: "首页" }} />
+      <Stack.Screen options={{ title: "Expo Hero" }} />
       <ScrollView contentContainerStyle={{ padding: 20, gap: 20 }}>
         {posts.map((post) => (
           <LabListItem key={post.id} post={post} />
