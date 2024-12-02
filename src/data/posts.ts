@@ -144,5 +144,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://www.youtube.com/live/8Saxitk5IWg",
     tags: ["视差", "轮播图", "TanStack Query", "FlatList", "reanimated"]
+  },
+  {
+    id: "14",
+    title: "TikTok消息动画",
+    href: "/animation/tiktok-incoming-message",
+    date: "2024-12-02",
+    image: require("@assets/images/hero/animation/tiktok-incoming-message.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/dFUaYZ_AXcc",
+    tags: ["FlatList", "reanimated", "SegmentedControl", "动画"]
   }
 ];
