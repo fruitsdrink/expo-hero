@@ -1,7 +1,19 @@
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
 
 import "../../global.css";
+
+// splash screen不能在 expo go 中使用
+/*
+SplashScreen.preventAutoHideAsync();
+
+SplashScreen.setOptions({
+  duration: 1000,
+  fade: true
+});
+// setTimeout(SplashScreen.hideAsync, 5000);
+*/
 
 export default function RootLayout() {
   useFonts({
