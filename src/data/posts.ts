@@ -154,5 +154,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/dFUaYZ_AXcc",
     tags: ["FlatList", "reanimated", "SegmentedControl", "动画"]
+  },
+  {
+    id: "15",
+    title: "竖向列表动画",
+    href: "/animation/reanimated-vertical-list",
+    date: "2024-12-03",
+    image: require("@assets/images/hero/animation/reanimated-vertical-list.jpg"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/dFUaYZ_AXcc",
+    tags: ["FlatList", "reanimated", "动画"]
   }
 ];
