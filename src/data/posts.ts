@@ -190,7 +190,7 @@ export const posts: Post[] = [
     title: "Tabbar动画01",
     href: "/tabbar/tabbar01",
     date: "2024-12-04",
-    image: require("@assets/images/hero/not-just/tesla-clone.png"),
+    image: require("@assets/images/hero/tabbar/tabbar01.png"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/GrLCS5ww030",
     tags: ["Tabbar", "动画", "reanimated"]
