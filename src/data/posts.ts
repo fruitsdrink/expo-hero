@@ -174,5 +174,25 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/tROYCoYpO58",
     tags: ["FlatList", "reanimated", "动画", "Moti"]
+  },
+  {
+    id: "17",
+    title: "TeslaClone",
+    href: "/not-just/tesla-clone",
+    date: "2024-12-04",
+    image: require("@assets/images/hero/not-just/tesla-clone.png"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/iQ_0Fd_N3Mk",
+    tags: ["NotJust", "FlatList"]
+  },
+  {
+    id: "18",
+    title: "Tabbar动画01",
+    href: "/animation/tabbar/tabbar01",
+    date: "2024-12-04",
+    image: require("@assets/images/hero/not-just/tesla-clone.png"),
+    imageSizeType: "vertical",
+    youtube: "https://youtu.be/GrLCS5ww030",
+    tags: ["Tabbar", "动画", "reanimated"]
   }
 ];
