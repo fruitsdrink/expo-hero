@@ -188,7 +188,7 @@ export const posts: Post[] = [
   {
     id: "18",
     title: "Tabbar动画01",
-    href: "/animation/tabbar/tabbar01",
+    href: "/tabbar/tabbar01",
     date: "2024-12-04",
     image: require("@assets/images/hero/not-just/tesla-clone.png"),
     imageSizeType: "vertical",
