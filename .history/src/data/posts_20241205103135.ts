@@ -200,9 +200,9 @@ export const posts: Post[] = [
     title: "顶部Tabs动画",
     href: "/animation/reanimated-top-tabs",
     date: "2024-12-04",
-    image: require("@assets/images/hero/animation/reanimated-top-tabs.png"),
+    image: require("@assets/images/hero/tabbar/tabbar01.png"),
     imageSizeType: "vertical",
     youtube: "https://youtu.be/zBBMimH6lTc",
-    tags: ["Tabbar", "动画", "reanimated", "LucideIcon", "动态组件"]
+    tags: ["Tabbar", "动画", "reanimated", "LucideIcon"]
   }
 ];
