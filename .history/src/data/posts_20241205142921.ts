@@ -208,11 +208,11 @@ export const posts: Post[] = [
   {
     id: "20",
     title: "计数器动画",
-    href: "/animation/reanimated-counter",
+    href: "/animation/reanimated-top-tabs",
     date: "2024-12-05",
-    image: require("@assets/images/hero/animation/reanimated-counter.png"),
+    image: require("@assets/images/hero/animation/reanimated-top-tabs.png"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/Rv91NdVtnsw",
+    youtube: "https://youtu.be/zBBMimH6lTc",
     tags: ["动画", "reanimated", "LucideIcon", "动态组件", "数字"],
   },
 ];
