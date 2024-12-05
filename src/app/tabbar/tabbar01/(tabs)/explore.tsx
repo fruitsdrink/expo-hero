@@ -14,7 +14,8 @@ export default function ExploreScreen() {
         style={{
           flex: 1,
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
+          backgroundColor: "white"
         }}
       >
         <Text>发现页面</Text>

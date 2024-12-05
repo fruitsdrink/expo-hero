@@ -15,7 +15,8 @@ export default function Tabbar01Screen() {
         style={{
           flex: 1,
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
+          backgroundColor: "white"
         }}
       >
         <Text>首页页面</Text>

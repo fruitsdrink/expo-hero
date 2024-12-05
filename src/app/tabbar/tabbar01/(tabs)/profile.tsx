@@ -15,7 +15,8 @@ export default function ProfileScreen() {
         style={{
           flex: 1,
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
+          backgroundColor: "white"
         }}
       >
         <Text>我的页面</Text>

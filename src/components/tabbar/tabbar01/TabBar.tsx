@@ -87,7 +87,7 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
 
         return (
           <TabBarButton
-            key={route.key}
+            key={`button-${route.key ?? "0"}`}
             href={buildHref(route.name, route.params)}
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarButtonTestID}

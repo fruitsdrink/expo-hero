@@ -36,39 +36,38 @@ export const LabListItem: React.FC<LabListItemProps> = ({
         padding: 10
       }}
     >
+      <View
+        style={{
+          borderWidth: 0,
+          borderColor: "rgba(0,0,0,0.1)",
+          borderRadius: 8,
+          marginBottom: 20,
+          boxShadow: "0 0 10px rgba(0, 0, 0, 0.05)",
+          padding: 20,
+          backgroundColor: "#333"
+        }}
+      >
+        {video ? (
+          <VideoListItem video={video} imageSizeType={imageSizeType} />
+        ) : (
+          <Image
+            source={image}
+            contentFit="cover"
+            placeholder={{ blurhash }}
+            transition={1000}
+            style={{
+              borderRadius: 8,
+              width: "100%",
+              aspectRatio:
+                !imageSizeType || imageSizeType === "horizontal" ? 4 / 2 : 2 / 3
+              // height: 300
+            }}
+          />
+        )}
+      </View>
+
       <Link href={href} asChild>
         <Pressable>
-          <View
-            style={{
-              borderWidth: 0,
-              borderColor: "rgba(0,0,0,0.1)",
-              borderRadius: 8,
-              marginBottom: 20,
-              boxShadow: "0 0 10px rgba(0, 0, 0, 0.05)",
-              padding: 20
-            }}
-          >
-            {video ? (
-              <VideoListItem video={video} imageSizeType={imageSizeType} />
-            ) : (
-              <Image
-                source={image}
-                contentFit="cover"
-                placeholder={{ blurhash }}
-                transition={1000}
-                style={{
-                  borderRadius: 8,
-                  width: "100%",
-                  aspectRatio:
-                    !imageSizeType || imageSizeType === "horizontal"
-                      ? 4 / 2
-                      : 2 / 3
-                  // height: 300
-                }}
-              />
-            )}
-          </View>
-
           <View className="flex-row justify-between items-center my-2">
             <View className="flex-row gap-1 items-center">
               <Text className="text-center">{title}</Text>
@@ -78,21 +77,22 @@ export const LabListItem: React.FC<LabListItemProps> = ({
               <Text className="text-base text-slate-600">{date}</Text>
             </View>
           </View>
-          {desc && <Text className="text-base text-gray-500">{desc}</Text>}
-          {tags && (
-            <View className="flex-row flex-wrap gap-1 my-2 w-full">
-              {tags.map((tag) => (
-                <View
-                  key={tag}
-                  className="px-2 py-1 text-sm rounded-full bg-slate-800"
-                >
-                  <Text className="text-white">{tag}</Text>
-                </View>
-              ))}
-            </View>
-          )}
         </Pressable>
       </Link>
+      {desc && <Text className="text-base text-gray-500">{desc}</Text>}
+      {tags && (
+        <View className="flex-row flex-wrap gap-1 my-2 w-full">
+          {tags.map((tag) => (
+            <View
+              key={tag}
+              className="px-2 py-1 text-sm rounded-full bg-slate-800"
+            >
+              <Text className="text-white">{tag}</Text>
+            </View>
+          ))}
+        </View>
+      )}
+
       <View className="flex-row gap-4">
         {github && (
           <Link href={github} asChild>
