@@ -4,7 +4,6 @@ import type React from "react";
 import { posts } from "@/data/posts";
 import { LabListItem } from "@/components/LabListItem";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useRef } from "react";
 
 const { width, height } = Dimensions.get("screen");
 const _itemWidth = width;
@@ -16,14 +15,12 @@ const sortedPost = posts.sort((a, b) => {
 });
 export default function Index() {
   const insets = useSafeAreaInsets();
-  const ref = useRef<FlatList>(null);
 
   return (
     <View className="flex-1">
       <Stack.Screen options={{ title: "Expo Hero", headerShown: false }} />
 
       <FlatList
-        ref={ref}
         data={sortedPost}
         scrollEventThrottle={16}
         decelerationRate={"fast"}
@@ -48,10 +45,7 @@ export default function Index() {
       />
       <Pressable
         onPress={() => {
-          ref.current?.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          console.log("go to top");
         }}
       >
         <View
@@ -64,12 +58,11 @@ export default function Index() {
             width: 50,
             height: 50,
             borderRadius: 50,
-            backgroundColor: "#333",
-            zIndex: 100,
-            boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)"
+            backgroundColor: "red",
+            zIndex: 100
           }}
         >
-          <Text style={{ color: "#fff" }}>top</Text>
+          <Text>top</Text>
         </View>
       </Pressable>
     </View>

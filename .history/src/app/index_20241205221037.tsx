@@ -48,10 +48,7 @@ export default function Index() {
       />
       <Pressable
         onPress={() => {
-          ref.current?.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          console.log("go to top");
         }}
       >
         <View

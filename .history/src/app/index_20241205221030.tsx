@@ -23,7 +23,6 @@ export default function Index() {
       <Stack.Screen options={{ title: "Expo Hero", headerShown: false }} />
 
       <FlatList
-        ref={ref}
         data={sortedPost}
         scrollEventThrottle={16}
         decelerationRate={"fast"}
@@ -48,10 +47,7 @@ export default function Index() {
       />
       <Pressable
         onPress={() => {
-          ref.current?.scrollToOffset({
-            offset: 0,
-            animated: true
-          });
+          console.log("go to top");
         }}
       >
         <View
