@@ -224,7 +224,7 @@ export const posts: Post[] = [
     date: "2024-12-06",
     video: require("@assets/videos/cover/animation/reanimated-leaderboard.mp4"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/ycnnhfHO8wU",
+    youtube: "https://youtu.be/Rv91NdVtnsw",
     tags: ["动画", "reanimated"]
   }
 ];

@@ -222,9 +222,9 @@ export const posts: Post[] = [
     title: "排行榜动画",
     href: "/animation/reanimated-leaderboard",
     date: "2024-12-06",
-    video: require("@assets/videos/cover/animation/reanimated-leaderboard.mp4"),
+    video: require("@assets/videos/cover/animation/reanimated-counter.mp4"),
     imageSizeType: "vertical",
-    youtube: "https://youtu.be/ycnnhfHO8wU",
-    tags: ["动画", "reanimated"]
+    youtube: "https://youtu.be/Rv91NdVtnsw",
+    tags: ["动画", "reanimated", "LucideIcon", "动态组件", "数字"]
   }
 ];
