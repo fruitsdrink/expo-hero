@@ -226,5 +226,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://youtu.be/ycnnhfHO8wU",
     tags: ["动画", "reanimated"]
+  },
+  {
+    id: "22",
+    title: "文本动画",
+    href: "/animation/reanimated-sentence",
+    date: "2024-12-06",
+    video: require("@assets/videos/cover/animation/reanimated-sentence.mp4"),
+    imageSizeType: "vertical",
+    youtube: "https://www.youtube.com/live/-YjeQ9zvM3E",
+    tags: ["动画", "reanimated", " 文字"]
   }
 ];

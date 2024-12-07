@@ -127,9 +127,11 @@ const VideoListItem = ({
           borderRadius: 8,
           width: "100%",
           aspectRatio:
-            !imageSizeType || imageSizeType === "horizontal" ? 4 / 2 : 2 / 3
+            !imageSizeType || imageSizeType === "horizontal" ? 4 / 2 : 2 / 4
         }}
         player={player}
+        contentFit="contain"
+        nativeControls={false}
       />
     </View>
   );
