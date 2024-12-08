@@ -235,6 +235,16 @@ export const posts: Post[] = [
     video: require("@assets/videos/cover/animation/reanimated-sentence.mp4"),
     imageSizeType: "vertical",
     youtube: "https://www.youtube.com/live/-YjeQ9zvM3E",
-    tags: ["动画", "reanimated", " 文字"]
+    tags: ["动画", "reanimated", "文字"]
+  },
+  {
+    id: "23",
+    title: "手风琴下拉组件",
+    href: "/animation/reanimated-accordion",
+    date: "2024-12-08",
+    video: require("@assets/videos/cover/animation/reanimated-accordion.mp4"),
+    imageSizeType: "vertical",
+    youtube: "https://www.youtube.com/live/T-b0gxkW9MM",
+    tags: ["动画", "reanimated", "手风琴", "下拉组件"]
   }
 ];
