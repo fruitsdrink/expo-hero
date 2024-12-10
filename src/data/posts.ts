@@ -13,6 +13,7 @@ export type Post = {
   github?: Href;
   youtube?: Href;
   tags?: string[];
+  isTop?: boolean;
 };
 
 export const posts: Post[] = [
@@ -35,7 +36,8 @@ export const posts: Post[] = [
     date: "2024-11-26",
     image: require("@assets/images/cover/reanimated.png"),
     youtube: "https://youtu.be/bP72HF-G4aQ",
-    tags: ["动画", "reanimated"]
+    tags: ["动画", "reanimated"],
+    isTop: true
   },
   {
     id: "3",

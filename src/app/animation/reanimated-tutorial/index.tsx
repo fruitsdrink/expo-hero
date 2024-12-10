@@ -39,6 +39,12 @@ const tutorials = [
     title: "堆栈卡片轮播动画",
     url: "/animation/reanimated-tutorial/animated-stack-carousel2" as Href,
     youtube: "https://youtu.be/tm3ztbm1yog?si=eUoMChZCPOEnYhWd" as Href
+  },
+  {
+    id: "7",
+    title: "动画标签",
+    url: "/animation/reanimated-tutorial/animated-top-tab" as Href,
+    youtube: "https://www.bilibili.com/video/BV1Q5YZesE5M" as Href
   }
 ];
 

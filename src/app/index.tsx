@@ -10,10 +10,19 @@ const { width, height } = Dimensions.get("screen");
 const _itemWidth = width;
 const _itemHeight = height;
 
-const sortedPost = posts.sort((a, b) => {
-  // 按id倒序排序
-  return Number.parseInt(b.id) - Number.parseInt(a.id);
-});
+const sortedPost = posts
+  .filter((item) => !item.isTop)
+  .sort((a, b) => {
+    // 按id倒序排序
+    return Number.parseInt(b.id) - Number.parseInt(a.id);
+  });
+
+const topPosts = posts.filter((item) => item.isTop);
+
+if (topPosts.length > 0) {
+  sortedPost.unshift(...topPosts);
+}
+
 export default function Index() {
   const insets = useSafeAreaInsets();
   const ref = useRef<FlatList>(null);
