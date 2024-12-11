@@ -4,6 +4,7 @@ import { Image } from "expo-image";
 import type React from "react";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import type { Post } from "@/data/posts";
 import { useVideoPlayer, VideoView } from "expo-video";
 
@@ -24,6 +25,7 @@ export const LabListItem: React.FC<LabListItemProps> = ({
     date,
     github,
     youtube,
+    bilibili,
     tags,
     imageSizeType
   }
@@ -102,6 +104,11 @@ export const LabListItem: React.FC<LabListItemProps> = ({
         {youtube && (
           <Link href={youtube} asChild>
             <Entypo name="youtube-with-circle" size={24} color="black" />
+          </Link>
+        )}
+        {bilibili && (
+          <Link href={bilibili} asChild>
+            <FontAwesome6 name="bilibili" size={24} color="black" />
           </Link>
         )}
       </View>

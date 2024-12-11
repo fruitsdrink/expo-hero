@@ -12,6 +12,7 @@ export type Post = {
   imageSizeType?: "horizontal" | "vertical";
   github?: Href;
   youtube?: Href;
+  bilibili?: Href;
   tags?: string[];
   isTop?: boolean;
 };
@@ -37,7 +38,7 @@ export const posts: Post[] = [
     image: require("@assets/images/cover/reanimated.png"),
     youtube: "https://youtu.be/bP72HF-G4aQ",
     tags: ["动画", "reanimated"],
-    isTop: true
+    isTop: false
   },
   {
     id: "3",
@@ -248,5 +249,15 @@ export const posts: Post[] = [
     imageSizeType: "vertical",
     youtube: "https://www.youtube.com/live/T-b0gxkW9MM",
     tags: ["动画", "reanimated", "手风琴", "下拉组件"]
+  },
+  {
+    id: "24",
+    title: "自定义标签导航",
+    href: "/tabbar/tabbar02",
+    date: "2024-12-11",
+    video: require("@assets/videos/cover/tabbar/tabbar02.mp4"),
+    imageSizeType: "vertical",
+    bilibili: "https://www.bilibili.com/video/BV1rZHnegEcG",
+    tags: ["Tabbar"]
   }
 ];
